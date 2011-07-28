@@ -1,0 +1,127 @@
+Resume
+------
+
+Mrityunjay Ravi Iyer
+C1008, Brigade Gardenia, J.P. Nagar 7th Phase, Bangalore - 560078
+
+www.develmj.com
+
+Objective:
+
+To work in a challenging and innovative environment that will allow me
+to learn and grow as a software engineer
+
+Technical Skills:
+ - Languages: Ruby, Python, Clojure (learning), Erlang (learning)
+ - Operating Systems: GNU/Linux (both development and usage), Windows
+ (only usage)
+ - Unix system programming
+ - Shoes (Ruby GUI toolkit)
+ - Rails (Ruby on Rails)
+ - Experience in full software lifecycle (ideation and design,
+ development, testing, packaging and deployment)
+ - Customer support and interaction
+ - Linux OS customization and packaging
+ - Rapid prototyping
+
+Management Experience:
+ - Research and Development lead (Bangalore)
+ - Project management and delegation
+
+Summary:
+
+Projects:
+
+Atlantis Webtop
+- User chat integration
+  - Designed and developed a a user chat system integrated with RoR backed UI using ejabberd and jwchat.
+- User management system
+  - Designed and developed Extensive user management system written in RoR and integrated with the Linux (Gentoo) user environment (RoR, Linux system)
+- User monitoring (stats, usage etc)
+  - Usage monitoring, geographic access details etc (RoR)
+- Google gadget (Complete webtop user interface packed into a google gadget)
+  - Complete webtop access console re-written and miniaturized to work within a a google gadget (XML and Ror)
+
+Atlantis Unity
+- 
+Atlantis Ilio
+Netboot
+  - Version 1: Designed and developed a Linux (Debian) based JEOS. 
+
+
+
+ubsection{Atlantis Computing Pvt Ltd (August 2006 - Present)}
+\begin{itemize}
+  \item[] Postion held: Development lead (Senior Developer)
+\end{itemize}
+
+\subsubsection{Projects}
+\subsubsection{Atlantis ILIO: Storage Appliance with Deduplication and Layering}
+\begin{itemize}
+  \item[-] Instrumental in developing the kernel module for inline deduplication of data.
+
+  \item[-] Developed internal development/debugging tools for both the kernel and userspace portions of the code.
+
+  \item[-] Designed and developed a command line API and automated test suite for the layering component.
+\end{itemize}
+
+\subsubsection{ Atlantis ILIO controller: Application used to dynamically provision virtual appliances}
+
+\begin{itemize}
+\item[-] Designed and developed several modules and libraries to compose,
+provision, and manage images and layer storage of virtual appliances spread
+across multiple ILIO nodes. Helped shape the distributed architecture of the software.
+
+\item[-] Was instrumental in re-architecting and prototyping the distributed system using Erlang/OTP.
+\end{itemize}
+
+\subsubsection{ Atlantis Configurator: Application for configuring ILIO
+  deployments}
+\begin{itemize}
+  \item[-] Implemented the user interface and significant portions of the backend
+      using Ruby/Shoes.
+\end{itemize}
+
+\subsubsection{ Atlantis Unity administration console: Software used to
+  provision and manage virtual applications/desktops}
+
+\begin{itemize}
+  \item[-] Designed and developed several features and libraries for the
+  administration console: Provisioning system for virtual
+  desktops/applications, HTTP APIs to communicate with the load
+  balancer, Policy engine for user/group and assets management, etc.
+  
+  \item[-] Application publishing and packaging: Was solely responsible
+  for researching the use and workings of the Thinstall application
+  packager and API. Developed interfacing mechanisms between the
+  broker and Thinstall. Developed mechanisms to import, upgrade,
+  publish and manage pre-packaged applications.
+  
+  \item[-] Designed and developed server-side APIs for several features
+   of the web desktop: unity file explorer, shorcut manager,
+   launching mechanisms for virtual resources, etc.
+\end{itemize}
+
+\subsection{ DeepRoot Linux Pvt Ltd \hfill Developer, Nov 2006 - Apr 2007 }
+Languages and Technologies: Perl, Catalyst \\
+
+\subsubsection{ LabourNet: A web-based portal used for accessing and
+  managing the details of the daily-wage workers (Developed for Maya India)}
+\begin{itemize}
+\item[] Designed and implemented the backend logic for the application using Perl/Catalyst.
+\end{itemize}
+
+\section{Personal projects}
+
+\begin{itemize}
+\item \emph{cxr}: PDF Indexer and Context search desktop application
+  written in Clojure. The application goes beyond conventional desktop
+  search applications by automatically including contextual and
+  related-word searches.
+
+\item \emph{clj-shoes}: Attempt to write a Ruby/Shoes like GUI framework for Clojure based on Swing.
+
+\item \emph{losetup-rb}: Linux loop device userspace tool implementation in Ruby.
+
+\item[] \url{http://github.com/abhijith}
+\end{itemize}
