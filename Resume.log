@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.7.11)  28 JUL 2011 22:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.7.11)  28 JUL 2011 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,8 +9,8 @@ Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -210,13 +210,13 @@ LaTeX Info: Redefining \pageref on input line 23.
 \everyMPtoPDFconversion=\toks18
 )
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <17.28> not available
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <14.4> not available
 (Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 27.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 27.
+(Font)              <14.4> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 27.
+(Font)              <7> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -226,20 +226,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Resume.aux) ) 
 Here is how much of TeX's memory you used:
  4300 strings out of 495061
- 62251 string characters out of 1182621
- 134296 words of memory out of 3000000
- 7436 multiletter control sequences out of 15000+50000
- 9797 words of font info for 34 fonts, out of 3000000 for 9000
+ 62252 string characters out of 1182621
+ 134298 words of memory out of 3000000
+ 7438 multiletter control sequences out of 15000+50000
+ 8875 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,5n,30p,263b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,5n,30p,263b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-texlive/fonts/type
+fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type
 1/public/amsfonts/cm/cmsy6.pfb>
-Output written on Resume.pdf (2 pages, 58188 bytes).
+Output written on Resume.pdf (2 pages, 59922 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
