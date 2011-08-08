@@ -1,60 +1,74 @@
-\documentclass[a4paper,11pt]{article}
-\usepackage{titlesec}
-\usepackage{url,hyperref,color}
-\hypersetup{
-  pdfauthor={Mrityunjay Ravi Iyer},
-  pdftitle={Mrityunjay Ravi Iyer - Resume},
-  pdfborder = {1 1 1 1},
-}
+\documentclass{scrartcl}	% classe article di KOMA
+\reversemarginpar
+\newcommand{\MarginDate}[1]{\marginpar{\raggedleft\itshape\small#1}}
+%\usepackage[latin1]{inputenc}	% la codifica di input
+%\usepackage[T1]{fontenc}	% la codifica dei font
+%\usepackage[LabelsAligned]{currvita}	% un buon pacchetto per CV
+\usepackage[nochapters]{classicthesis} % stile ClassicThesis
+\usepackage[NoDate]{currvita}
+\usepackage{url}	% per gli indirizzi Internet
+\renewcommand{\cvheadingfont}{\LARGE\color{Gray}}
+\renewcommand{\cvlistheadingfont}{\large}
+\renewcommand{\cvlabelfont}{\qquad}
+%Setup hyperref package, and colours for links, text and headings
+\usepackage{hyperref}		
+\hypersetup{	colorlinks,breaklinks,
+			urlcolor=Maroon, 
+			linkcolor=Maroon}
+\usepackage{eurosym}
+\newlength{\datebox}\settowidth{\datebox}{August 2006 - Present}
 
-\titleformat{\section}{\large\bf\raggedright}{}{0em}{}[\titlerule]
-\titleformat{\subsection}{\normalsize\bf\raggedright}{}{0.7em}{$\diamond$
-}[]
-\titleformat{\subsubsection}{\it\raggedright}{}{1em}{}
+\newcommand{\NewWorkExperience}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\textit{#1}}\hspace{1.5em}
+  #2 #3%
+\vspace{0.5em}}
 
-\addtolength{\oddsidemargin}{-.875in}
-\addtolength{\evensidemargin}{-.875in}
-\addtolength{\textwidth}{1.75in}
-
-\addtolength{\topmargin}{-.875in}
-\addtolength{\textheight}{1.75in}
-
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize}
+\newcommand{\Sep}{\vspace{2em}}
 \begin{document}
-\begin{center}{\Large{\textsc{\textsl{\bf{\underline{Mrityunjay Ravi
-          Iyer}}\\\tiny{C1008, Brigade Gardenia, J.P. Nagar 7th Phase,
-          RBI Layout, Bangalore - 560078 $\bullet$ (+91) 9886385180
-          $\bullet$ develmj@gmail.com}}}}}
-\end{center}
-\section{Objective}
-To work in a challenging and innovative environment that will allow me
-to learn and grow as a software engineer
+\thispagestyle{empty}
 
-\section{Technical Skills}
-\subsection{Programming Languages}
-\begin{itemize}
-\footnotesize{
-  \item[\footnotesize$\bullet$] Ruby, Python
-  \item[\footnotesize$\bullet$] Learning Clojure and Erlang
+\begin{cv}{
+\spacedallcaps{Mrityunjay Ravi Iyer}
 }
-\end{itemize}
+\vspace{1.5em}
 
-\subsection{Tools}
+
+\noindent\spacedlowsmallcaps{Objective}
+\vspace{0.5em}
+
+\Description{To work in a challenging and innovative environment that will allow me
+to learn and grow as a software engineer}
+\vspace{1.5em}
+
+\noindent\spacedlowsmallcaps{Technical Skills}
+\vspace{0.5em}
+
+\Description{
 \begin{itemize}
-\footnotesize{
-  \item[\footnotesize$\bullet$] \textsl{Version control tools:} Git, Subversion
+  \item[\footnotesize$\bullet$]Ruby, Python,\MarginDate{Programming Languages}
+  \item[\footnotesize$\bullet$]Learning Clojure and Erlang
+\end{itemize}
+}
+
+\vspace{0.5em}
+
+\Description{
+\begin{itemize}
+  \item[\footnotesize$\bullet$] \textsl{Version control tools:} Git, Subversion,\MarginDate{Tools}
   \item[\footnotesize$\bullet$] \textsl{Project management tools:} Jira, Green-hopper, Bugzilla, Trac,
     Pivotal Tracker
   \item[\footnotesize$\bullet$] \textsl{Development tolls:} Firebug
-}
 \end{itemize}
+}
 
-\subsection{Development}
+\vspace{0.5em}
+
+\Description{
 \begin{itemize}
-\footnotesize{
   \item[\footnotesize$\bullet$] \textsl{Operating systems:} GNU/Linux (use and development),
-    Windows (use)
+    Windows (use)\MarginDate{Development}
   \item[\footnotesize$\bullet$] \textsl{Frameworks:} Rails (Ruby on Rails)
-  \item[\footnotesize$\bullet$] \textsl{Virtualization:} Vmware, Qemu
+  \item[\footnotesize$\bullet$] \textsl{Virtualization:} VMware, Qemu
   \item[\footnotesize$\bullet$] Working knowledge of Unix System Programming
   \item[\footnotesize$\bullet$] Good knowledge of Shoes (Ruby based GUI toolkit) and working
     knowledge of Gtk (Rubygtk)
@@ -64,45 +78,21 @@ to learn and grow as a software engineer
   \item[\footnotesize$\bullet$] Good at rapid prototyping of ideas
   \item[\footnotesize$\bullet$] Experienced in Customer support and
     interaction
-}
 \end{itemize}
-
-\section{Technical Experience - Atlantis Computing India
-  Pvt. Ltd. (August 2006 - Present)}
-
-\subsection{Atlantis Ilio}
-\begin{itemize}
-\footnotesize{
-  \item[\footnotesize$\bullet$] \textbf{Installer: } Designed and developed the email
-    integration to the installer using Ruby and Dialog (Linux).
-  \item[\footnotesize$\bullet$] \textbf{Notification: } Designed and developed a
-    notification system to inform administrators regarding server
-    failure, failover or failback (in a high availabilty environment) using
-    integrated email system using Ruby, Erlang and Erlectricity.
-  \item[\footnotesize$\bullet$] \textbf{Configurator: }Was instrumental in
-    designing and developing an installer/configuration generator
-    using Ruby/Shoes. The configurator managed networking,
-    installation details and deployment details needed to
-    install/deploy the product.
 }
-\end{itemize}
 
-\subsection{Atlantis Unity}
-\begin{itemize}
-\footnotesize{
-  \item[\footnotesize$\bullet$] \textbf{Active Directory: }Was instrumental in developing
-    active directory integration for Atlantis Unity using Ruby, Ldap
-    and RoR. The system
-    enabled active directory to manage users, permissions and secure
-    login using AD credentials.
-  \item[\footnotesize$\bullet$] \textbf{}
-}
-\end{itemize}
+\vspace{1.5em}
 
-\subsection{Atlantis Webtop}
+\noindent\spacedlowsmallcaps{Technical Experience}
+\vspace{0.5em}
+
+\NewWorkExperience{\small{Aug 2006 - Present}}{\small{Atlantis
+    Computing}}{}
+
+\Description{
 \begin{itemize}
-\footnotesize{
-  \item[\footnotesize$\bullet$] \textbf{User signup system: }Was instrumental in designing
+  \item[\footnotesize$\bullet$] \textbf{User signup system: }Was
+    instrumental in designing\MarginDate{Atlantis Webtop}
     and developing a user signup system using RoR, automated mailer for
     signed-up users using Action Mailer (RoR) and automatic distributed backup using Slony (for postgres).
   \item[\footnotesize$\bullet$] \textbf{User management system: }Designed and developed an
@@ -111,38 +101,99 @@ to learn and grow as a software engineer
     quota management, access rights, subscriptions etc.
   \item[\footnotesize$\bullet$] \textbf{User chat integration: } Designed and developed a user chat system integrated with RoR backed UI using ejabberd and jwchat.
   \item[\footnotesize$\bullet$] \textbf{User monitoring: }Designed and developed a user
-    monotoring framework to record usage, geographical access,
-    subscribtion usage, report generation and trend generation.
+    monitoring framework to record usage, geographical access,
+    subscription usage, report generation and trend generation.
   \item[\footnotesize$\bullet$] \textbf{Google gadget: }Complete
     webtop access console re-written and miniaturized to work within a
     google gadget (XML and Ror)
-}
 \end{itemize}
+}
 
-\section{Management Experience - Atlantis Computing India
-  Pvt. Ltd. (October 2008 - Present)}
+\vspace{0.5em}
+
+\Description{
+\begin{itemize}
+  \item[\footnotesize$\bullet$] \textbf{Active Directory: }Was
+    instrumental in developing \MarginDate{Atlantis Unity}
+    active directory integration for Atlantis Unity using Ruby, Ldap
+    and RoR. The system
+    enabled active directory to manage users, permissions and secure
+    login using AD credentials.
+  \item[\footnotesize$\bullet$] \textbf{Netboot v1.0: }Designed and
+    developed a pxe-boot Knoppix based Jeos. The Jeos allowed diskless
+    clients to boot into a custom environment and seamlessly
+    startup a Windows based virtual machine image using Qemu built into the Jeos.
+  \item[\footnotesize$\bullet$] \textbf{Netboot v2.0: }Designed and
+    developed a pxe-boot Ubuntu based Jeos. The Jeos allowed diskless
+    clients to boot into the Jeos, select a Windows based virtual
+    machine image and boot into it seamlessly using VMware Player
+    built into the Jeos. Worked with Michael Brown to integrate gPxe
+    with the Atlantis Netboot
+    solution.\\(http://etherboot.org/wiki/appnotes/authmenus)
+\end{itemize}
+}
+
+\vspace{0.5em}
+
+\Description{
+\begin{itemize}
+  \item[\footnotesize$\bullet$] \textbf{Installer: } Designed and developed the email\MarginDate{Atlantis Ilio}
+    integration to the installer using Ruby and Dialog
+    (Linux).
+  \item[\footnotesize$\bullet$] \textbf{Notification: } Designed and developed a
+    notification system to inform administrators regarding server
+    failure, failover or failback (in a high availability environment) using
+    integrated email system using Ruby, Erlang and Erlectricity.
+  \item[\footnotesize$\bullet$] \textbf{Configurator: }Was instrumental in
+    designing and developing an installer/configuration generator
+    using Ruby/Shoes. The configurator managed networking,
+    installation details and deployment details needed to
+    install/deploy the product.
+\end{itemize}
+}
+
+\vspace{1.5em}
+
+\noindent\spacedlowsmallcaps{Management Experience}
+\vspace{0.5em}
+
+\NewWorkExperience{\small{Oct 2008 - Present}}{\small{Atlantis Computing}}{}
+
+\Description{
 \begin{itemize}
   \item[\footnotesize$\bullet$] Research and development lead (Bangalore) since October
     2008
   \item[\footnotesize$\bullet$] Handling project management, delegation and interaction
     with senior management.
 \end{itemize}
+}
 
-\section{Academic Qualifications}
+\vspace{1.5em}
 
+\noindent\spacedlowsmallcaps{Academic Qualifications}
+\vspace{0.5em}
+
+\Description{Dayananda Sagar College of Engineering\MarginDate{B.E. Computer Science}\\Bangalore,
+  Karnataka (VTU)\hfill{2006}
+}
+
+\vspace{1em}
+
+\Description{National Public School (CBSE)\MarginDate{Standard 12}\\Bangalore, Karnataka)\hfill{2002}
+}
+
+\vspace{1em}
+
+\Description{National Public School (CBSE)\MarginDate{Standard 10}\\Bangalore, Karnataka)\hfill{2000}
+}
+
+\vspace{1.5em}
+
+\noindent\spacedlowsmallcaps{Achievements}
+\vspace{0.5em}
+
+\Description{
 \begin{itemize}
-  \item[\footnotesize$\bullet$] Dayananda Sagar College of Engineering (Bangalore,
-  Karnataka)\\ B.E Computer Science \hfill 2006
-  \item[\footnotesize$\bullet$] National Public School (Rajajinagar, Bangalore,
-  Karnataka)\\ Standard 12 (CBSE) \hfill 2002
-  \item[\footnotesize$\bullet$] Natinal Public School (Rajajinagar, Bangalore,
-  Karnataka)\\ Standard 10 (CBSE) \hfill 2000
-\end{itemize}
-
-\section{Achievements}
-
-\begin{itemize}
-\footnotesize{
   \item[\footnotesize$\bullet$] Was part of the team that suggested a changed university syllabus, for the seventh semester laboratory. The teams suggested syllabus is being currently implemented.
   \item[\footnotesize$\bullet$] Was part of the team that wrote the manual (now part of
   standard VTU syllabus) for the seventh
@@ -150,18 +201,25 @@ to learn and grow as a software engineer
   simulator.
   \item[\footnotesize$\bullet$] Was lead organizer and part of core-team that conducted a complete mock placement for the third year students of Computer Science department, involving complete mock company presentation to H.R. etc.
   \item[\footnotesize$\bullet$] Was part of the team that organized
-    the Entrepreneurship Development programme for the final year
+    the Entrepreneurship Development program for the final year
     students of our college in the year 2004.
-}
 \end{itemize}
+}
 
-\section{Personal Details}
+\vspace{1.5em}
+
+\noindent\spacedlowsmallcaps{Personal Data}
+\vspace{0.5em}
+
+\Description{
 \begin{itemize}
-\footnotesize{
-  \item[\footnotesize$\bullet$] \textbf{Name:} Mrityunjay Ravi Iyer
-  \item[\footnotesize$\bullet$] \textbf{Father's name:} Ravi Krishnan Iyer
-  \item[\footnotesize$\bullet$] \textbf{Date of birth:} 19th July 1984
-  \item[\footnotesize$\bullet$] \textbf{Website:} www.develmj.com
-}
+  \item[\footnotesize$\bullet$] \textsl{Name:} Mrityunjay Ravi Iyer
+  \item[\footnotesize$\bullet$] \textsl{Father's name:} Ravi Krishnan Iyer
+  \item[\footnotesize$\bullet$] \textsl{Date of birth:} 19th July 1984
+  \item[\footnotesize$\bullet$] \textsl{Website:} www.develmj.com
+  \item[\footnotesize$\bullet$] \textsl{Address:} C1008, Brigade
+    Gardenia, J.P. Nagar 7th Phase, Bangalore - 560078
 \end{itemize}
+}
+\end{cv}
 \end{document}
