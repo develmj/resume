@@ -9,8 +9,8 @@
 \renewcommand{\cvlabelfont}{\qquad}
 \usepackage{hyperref}		
 \hypersetup{	colorlinks,breaklinks,
-		urlcolor=Maroon, 
-		linkcolor=Maroon}
+		urlcolor=Gray, 
+		linkcolor=Gray}
 \usepackage{eurosym}
 \usepackage{color,soul}
 
@@ -29,7 +29,7 @@
 \thispagestyle{empty}
 
 \begin{cv}{
-\spacedallcaps{Mrityunjay Ravi Iyer}
+\href{http://www.develmj.com}{\spacedallcaps{Mrityunjay Ravi Iyer}}
 }
 \vspace{1.5em}
 
@@ -46,19 +46,8 @@ to learn and grow as a software engineer}
 
 \Description{
 \begin{itemize}
-  \item[\footnotesize$\bullet$]Ruby, Python,\MarginDate{Programming Languages}
+  \item[\footnotesize$\bullet$]Ruby, Python\MarginDate{Programming Languages}
   \item[\footnotesize$\bullet$]Learning Clojure and Erlang
-\end{itemize}
-}
-
-\vspace{0.5em}
-
-\Description{
-\begin{itemize}
-  \item[\footnotesize$\bullet$] \textsl{Version control tools:} Git, Subversion,\MarginDate{Tools}
-  \item[\footnotesize$\bullet$] \textsl{Project management tools:} Jira, Green-hopper, Bugzilla, Trac,
-    Pivotal Tracker
-  \item[\footnotesize$\bullet$] \textsl{Development tolls:} Firebug
 \end{itemize}
 }
 
@@ -82,6 +71,17 @@ to learn and grow as a software engineer}
 \end{itemize}
 }
 
+\vspace{0.5em}
+
+\Description{
+\begin{itemize}
+  \item[\footnotesize$\bullet$] \textsl{Version control tools:} Git, Subversion\MarginDate{Tools}
+  \item[\footnotesize$\bullet$] \textsl{Project management tools:} Jira, Green-hopper, Bugzilla, Trac,
+    Pivotal Tracker
+  \item[\footnotesize$\bullet$] \textsl{Development tools:} Firebug
+\end{itemize}
+}
+
 \vspace{1.5em}
 
 \noindent\spacedlowsmallcaps{\ul{Technical Experience}}
@@ -92,21 +92,21 @@ to learn and grow as a software engineer}
 
 \Description{
 \begin{itemize}
-  \item[\footnotesize$\bullet$] \textbf{User signup system: }Was
-    instrumental in designing\MarginDate{Atlantis Webtop}
-    and developing a user signup system using RoR, automated mailer for
+  \item[\footnotesize$\bullet$] \textbf{User signup system: }Designed,
+    coded and launched \MarginDate{Atlantis Webtop}
+    a user signup system using RoR, automated mailer for
     signed-up users using Action Mailer (RoR) and automatic distributed backup using Slony (for postgres).
-  \item[\footnotesize$\bullet$] \textbf{User management system: }Designed and developed an
-    extensive user management system written in RoR and integrated
+  \item[\footnotesize$\bullet$] \textbf{User management system: }Designed and developed a
+    comprehensive user management system written in RoR and integrated
     with the Linux (Gentoo) user environment. The system involved user
     quota management, access rights, subscriptions etc.
-  \item[\footnotesize$\bullet$] \textbf{User chat integration: } Designed and developed a user chat system integrated with RoR backed UI using ejabberd and jwchat.
+  \item[\footnotesize$\bullet$] \textbf{User chat integration: } Designed and developed a user chat system integrated with RoR backed UI using ejabberd and JWChat.
   \item[\footnotesize$\bullet$] \textbf{User monitoring: }Designed and developed a user
     monitoring framework to record usage, geographical access,
     subscription usage, report generation and trend generation.
-  \item[\footnotesize$\bullet$] \textbf{Google gadget: }Complete
+  \item[\footnotesize$\bullet$] \textbf{Google gadget: }Delivered a complete
     webtop access console re-written and miniaturized to work within a
-    google gadget (XML and Ror)
+    google gadget (XML and RoR)
 \end{itemize}
 }
 
@@ -114,23 +114,23 @@ to learn and grow as a software engineer}
 
 \Description{
 \begin{itemize}
-  \item[\footnotesize$\bullet$] \textbf{Active Directory: }Was
-    instrumental in developing \MarginDate{Atlantis Unity}
-    active directory integration for Atlantis Unity using Ruby, Ldap
+  \item[\footnotesize$\bullet$] \textbf{Active Directory: }Developed\MarginDate{Atlantis Unity}
+    the active directory integration for Atlantis Unity using Ruby, Ldap
     and RoR. The system
     enabled active directory to manage users, permissions and secure
     login using AD credentials.
-  \item[\footnotesize$\bullet$] \textbf{Netboot v1.0: }Designed and
-    developed a pxe-boot Knoppix based Jeos. The Jeos allowed diskless
-    clients to boot into a custom environment and seamlessly
-    startup a Windows based virtual machine image using Qemu built into the Jeos.
-  \item[\footnotesize$\bullet$] \textbf{Netboot v2.0: }Designed and
-    developed a pxe-boot Ubuntu based Jeos. The Jeos allowed diskless
-    clients to boot into the Jeos, select a Windows based virtual
-    machine image and boot into it seamlessly using VMware Player
-    built into the Jeos. Worked with Michael Brown to integrate gPxe
-    with the Atlantis Netboot
-    solution.\\(http://etherboot.org/wiki/appnotes/authmenus)
+  \item[\footnotesize$\bullet$] \textbf{Netboot:}
+   \begin{itemize}
+   \item[$\circ$]Designed and
+     developed a PXE-boot Knoppix based JeOS. The JeOS allowed diskless
+     clients to boot into a custom environment and seamlessly
+     startup a Windows based virtual machine image using Qemu built into the JeOS.
+   \item[$\circ$]Enhanced the JeOS to use Ubuntu as a base. The
+     user can select a Windows based virtual machine image and boot into it seamlessly using VMware Player
+     built into the JeOS. Worked with Etherboot gPXE team to integrate gPXE
+     with the Atlantis Netboot
+     solution.\\(\url{http://etherboot.org/wiki/appnotes/authmenus})
+   \end{itemize}
 \end{itemize}
 }
 
@@ -141,12 +141,13 @@ to learn and grow as a software engineer}
   \item[\footnotesize$\bullet$] \textbf{Installer: } Designed and developed the email\MarginDate{Atlantis Ilio}
     integration to the installer using Ruby and Dialog
     (Linux).
-  \item[\footnotesize$\bullet$] \textbf{Notification: } Designed and developed a
+  \item[\footnotesize$\bullet$] \textbf{Monitoring: } Designed and developed a
     notification system to inform administrators regarding server
-    failure, failover or failback (in a high availability environment) using
-    integrated email system using Ruby, Erlang and Erlectricity.
-  \item[\footnotesize$\bullet$] \textbf{Configurator: }Was instrumental in
-    designing and developing an installer/configuration generator
+    failure, failover or failback (in a high availability environment)
+    using the integrated email system, using Ruby and Erlectricity integrated
+    with the Erlang backend.
+  \item[\footnotesize$\bullet$] \textbf{Configurator: }Designed and
+    developed  an installer/configuration generator
     using Ruby/Shoes. The configurator managed networking,
     installation details and deployment details needed to
     install/deploy the product.
@@ -200,7 +201,9 @@ to learn and grow as a software engineer}
   standard VTU syllabus) for the seventh
   semester laboratory as well as complete solutions and open-source
   simulator.
-  \item[\footnotesize$\bullet$] Was lead organizer and part of core-team that conducted a complete mock placement for the third year students of Computer Science department, involving complete mock company presentation to H.R. etc.
+  \item[\footnotesize$\bullet$] Organized and co-ordinated the team
+    that conducted a mock placement for the third year students of the
+    Computer Science department, involving complete mock company presentation to H.R. etc.
   \item[\footnotesize$\bullet$] Was part of the team that organized
     the Entrepreneurship Development program for the final year
     students of our college in the year 2004.
@@ -217,7 +220,7 @@ to learn and grow as a software engineer}
   \item[\footnotesize$\bullet$] \textsl{Name:} Mrityunjay Ravi Iyer
   \item[\footnotesize$\bullet$] \textsl{Father's name:} Ravi Krishnan Iyer
   \item[\footnotesize$\bullet$] \textsl{Date of birth:} 19th July 1984
-  \item[\footnotesize$\bullet$] \textsl{Website:} www.develmj.com
+  \item[\footnotesize$\bullet$] \textsl{Website:} \url{www.develmj.com}
   \item[\footnotesize$\bullet$] \textsl{Address:} C1008, Brigade
     Gardenia, J.P. Nagar 7th Phase, Bangalore - 560078
 \end{itemize}
