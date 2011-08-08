@@ -1,21 +1,22 @@
-\documentclass{scrartcl}	% classe article di KOMA
+\documentclass{scrartcl}
 \reversemarginpar
 \newcommand{\MarginDate}[1]{\marginpar{\raggedleft\itshape\small#1}}
-%\usepackage[latin1]{inputenc}	% la codifica di input
-%\usepackage[T1]{fontenc}	% la codifica dei font
-%\usepackage[LabelsAligned]{currvita}	% un buon pacchetto per CV
-\usepackage[nochapters]{classicthesis} % stile ClassicThesis
+\usepackage[nochapters]{classicthesis}
 \usepackage[NoDate]{currvita}
-\usepackage{url}	% per gli indirizzi Internet
+\usepackage{url}
 \renewcommand{\cvheadingfont}{\LARGE\color{Gray}}
 \renewcommand{\cvlistheadingfont}{\large}
 \renewcommand{\cvlabelfont}{\qquad}
-%Setup hyperref package, and colours for links, text and headings
 \usepackage{hyperref}		
 \hypersetup{	colorlinks,breaklinks,
-			urlcolor=Maroon, 
-			linkcolor=Maroon}
+		urlcolor=Maroon, 
+		linkcolor=Maroon}
 \usepackage{eurosym}
+\usepackage{color,soul}
+
+\setul{0.3ex}{0.1ex}
+\setulcolor{Black}
+
 \newlength{\datebox}\settowidth{\datebox}{August 2006 - Present}
 
 \newcommand{\NewWorkExperience}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\textit{#1}}\hspace{1.5em}
@@ -33,14 +34,14 @@
 \vspace{1.5em}
 
 
-\noindent\spacedlowsmallcaps{Objective}
+\noindent\spacedlowsmallcaps{\ul{Objective}}
 \vspace{0.5em}
 
 \Description{To work in a challenging and innovative environment that will allow me
 to learn and grow as a software engineer}
 \vspace{1.5em}
 
-\noindent\spacedlowsmallcaps{Technical Skills}
+\noindent\spacedlowsmallcaps{\ul{Technical Skills}}
 \vspace{0.5em}
 
 \Description{
@@ -83,7 +84,7 @@ to learn and grow as a software engineer}
 
 \vspace{1.5em}
 
-\noindent\spacedlowsmallcaps{Technical Experience}
+\noindent\spacedlowsmallcaps{\ul{Technical Experience}}
 \vspace{0.5em}
 
 \NewWorkExperience{\small{Aug 2006 - Present}}{\small{Atlantis
@@ -154,7 +155,7 @@ to learn and grow as a software engineer}
 
 \vspace{1.5em}
 
-\noindent\spacedlowsmallcaps{Management Experience}
+\noindent\spacedlowsmallcaps{\ul{Management Experience}}
 \vspace{0.5em}
 
 \NewWorkExperience{\small{Oct 2008 - Present}}{\small{Atlantis Computing}}{}
@@ -170,7 +171,7 @@ to learn and grow as a software engineer}
 
 \vspace{1.5em}
 
-\noindent\spacedlowsmallcaps{Academic Qualifications}
+\noindent\spacedlowsmallcaps{\ul{Academic Qualifications}}
 \vspace{0.5em}
 
 \Description{Dayananda Sagar College of Engineering\MarginDate{B.E. Computer Science}\\Bangalore,
@@ -189,7 +190,7 @@ to learn and grow as a software engineer}
 
 \vspace{1.5em}
 
-\noindent\spacedlowsmallcaps{Achievements}
+\noindent\spacedlowsmallcaps{\ul{Achievements}}
 \vspace{0.5em}
 
 \Description{
@@ -208,7 +209,7 @@ to learn and grow as a software engineer}
 
 \vspace{1.5em}
 
-\noindent\spacedlowsmallcaps{Personal Data}
+\noindent\spacedlowsmallcaps{\ul{Personal Data}}
 \vspace{0.5em}
 
 \Description{
