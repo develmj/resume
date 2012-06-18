@@ -122,7 +122,7 @@ to learn and grow as a software engineer and manager}
     subscribe to desktop applications hosted on the cloud and access them using
     them remotely using a web-browser. This project allowed users to signup,
     create default user data and subscriptions and send an email on account
-    creation.
+    creation.\\
     The project involved:
     \begin{itemize}
     \item[\footnotesize$\circ$] Requirement gathering
@@ -136,14 +136,31 @@ to learn and grow as a software engineer and manager}
     \end{itemize}
     Technologies used: Ruby, RoR, Action Mailer (RoR), Postgres, Slony,
 Gentoo Linux
-  \item[\footnotesize$\bullet$] \textbf{User management system: }Designed and developed a
-    comprehensive user management system written in RoR and integrated
-    with the Linux (Gentoo) user environment. The system involved user
-    quota management, access rights, subscriptions etc.
-  \item[\footnotesize$\bullet$] \textbf{User chat integration: } Designed and developed a user chat system integrated with RoR backed UI using ejabberd and JWChat.
-  \item[\footnotesize$\bullet$] \textbf{User monitoring: }Designed and developed a user
-    monitoring framework to record usage, geographical access,
-    subscription usage, report generation and trend generation.
+  \item[\footnotesize$\bullet$] \textbf{User management system: }The Webtop User management system allowed
+administrators to handle all aspects of the user account. It let administrators
+set user quotas, modify access rights and application subscriptions.\\
+The project involved:
+    \begin{itemize}
+    \item[\footnotesize$\circ$] Requirement gathering and analysis
+    \item[\footnotesize$\circ$] Database design
+    \item[\footnotesize$\circ$] Design of the web-based administration console
+    \item[\footnotesize$\circ$] Design and development of server-side components to perform Linux
+      user administration (creation, permissions etc.)
+    \item[\footnotesize$\circ$] Design and development of the quota and subscription management
+engine
+    \end{itemize}
+    Technologies used: Ruby, Ruby on Rails, Postgres, Gentoo Linux
+  \item[\footnotesize$\bullet$] \textbf{User chat integration: }The Webtop User chat allowed users to chat among
+    themselves using an integrated chat client (browser-based).\\
+    The project involved:
+    \begin{itemize}
+    \item[\footnotesize$\circ$] Design and development of the browser based chat system
+    \item[\footnotesize$\circ$] Integration of JWChat with the existing Ruby on Rails based framework
+    \item[\footnotesize$\circ$] Configuration and integration of ejbbaerd with the Rails backend
+    \item[\footnotesize$\circ$] Design and development of user chat
+      access rights engine
+    \end{itemize}
+    Technologies used: Ruby, Ruby on Rails, ejabberd, JWChat, XML
   \item[\footnotesize$\bullet$] \textbf{Google gadget: }Delivered a complete
     webtop access console re-written and miniaturized to work within a
     google gadget (XML and RoR)
