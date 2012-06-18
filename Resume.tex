@@ -161,9 +161,36 @@ engine
       access rights engine
     \end{itemize}
     Technologies used: Ruby, Ruby on Rails, ejabberd, JWChat, XML
-  \item[\footnotesize$\bullet$] \textbf{Google gadget: }Delivered a complete
-    webtop access console re-written and miniaturized to work within a
-    google gadget (XML and RoR)
+  \item[\footnotesize$\bullet$] \textbf{User monitoring: }The user monitoring module was used to determine
+    Webtop usage statistics. The project involved monitoring subscription usage,
+    geographical access, report and trend generation.\\
+    The project involved:
+    \begin{itemize}
+    \item[\footnotesize$\circ$] Requirement analysis
+    \item[\footnotesize$\circ$] Database design
+    \item[\footnotesize$\circ$] Design and development of user logging subsystem
+    \item[\footnotesize$\circ$] Development of user access to geolocation mapping engine
+    \item[\footnotesize$\circ$] Design and development of trend determination engine
+    \item[\footnotesize$\circ$] Development of tools for report
+      generation
+    \end{itemize}
+    Technologies used: Ruby, Ruby on Rails, Awk, Postgres, Gentoo Linux
+  \item[\footnotesize$\bullet$] \textbf{Google gadget: }The Webtop Google gadget was a full-featured Webtop
+    access console re-written and miniaturized to work within a google gadget.
+    This allowed users to integrate their Webtop account into their Google home
+    page.\\
+    The project involved:
+    \begin{itemize}
+    \item[\footnotesize$\circ$] Requirement gathering and analysis
+    \item[\footnotesize$\circ$] Design and development of miniaturized Webtop UI
+    Design and development of Google Gadget
+    \item[\footnotesize$\circ$] Development of Rails backend to support Google Gadget
+    \item[\footnotesize$\circ$] Integration of Application Streaming with Google Gadget
+    \item[\footnotesize$\circ$] Development of secure login through
+      Google Gadget
+    \end{itemize}
+    Technologies used: Ruby, Ruby on Rails, XML, NX, Gentoo Linux,
+    Nginx
 \end{itemize}
 }
 
@@ -171,23 +198,65 @@ engine
 
 \Description{
 \begin{itemize}
-  \item[\footnotesize$\bullet$] \textbf{Active Directory: }Developed\MarginDate{Atlantis Unity}
-    the active directory integration for Atlantis Unity using Ruby, Ldap
-    and RoR. The system
-    enabled active directory to manage users, permissions and secure
-    login using AD credentials.
-  \item[\footnotesize$\bullet$] \textbf{Netboot:}
-   \begin{itemize}
-   \item[$\circ$]Designed and
-     developed a PXE-boot Knoppix based JeOS. The JeOS allowed diskless
-     clients to boot into a custom environment and seamlessly
-     startup a Windows based virtual machine image using Qemu built into the JeOS.
-   \item[$\circ$]Enhanced the JeOS to use Ubuntu as a base. The
-     user can select a Windows based virtual machine image and boot into it seamlessly using VMware Player
-     built into the JeOS. Worked with Etherboot gPXE team to integrate gPXE
-     with the Atlantis Netboot
-     solution.\\(\url{http://etherboot.org/wiki/appnotes/authmenus})
-   \end{itemize}
+\item[\footnotesize$\bullet$] \textbf{Active Directory:}\MarginDate{Atlantis Unity} The Active Directory integration with Atlantis
+  Unity allowed users to access their Unity account using their enterprise Active
+  Directory credentials. This also allowed administrators to control user access,
+  permissions and secure login through a single point.\\
+  The project involved:
+  \begin{itemize}
+  \item[\footnotesize$\circ$] Requirement analysis
+  \item[\footnotesize$\circ$] Design and development of custom Ruby module for Active Directory
+  \item[\footnotesize$\circ$] Database design
+  \item[\footnotesize$\circ$] Development of module to integrate Linux LDAP and Active Directory
+  \item[\footnotesize$\circ$] Development of custom LDAP tree search
+  \item[\footnotesize$\circ$] Design and development of single sign-on system for Unity
+  \item[\footnotesize$\circ$] Development of mapping between Active Directory and Unity
+    subscriptions
+  \end{itemize}
+  Technologies used: Ruby, Ruby on Rails, LDAP, Active Directory, Awk,
+  Gentoo Linux, Nginx
+\item[\footnotesize$\bullet$] \textbf{Netboot V1.0:} Atlantis Netboot v1.0 is a PXE-boot Knoppix based JeOS. The
+JeOS allowed diskless clients to boot into a custom environment and
+seamlessly start up a Windows based virtual machine image using Qemu
+built into the JeOS.\\
+The project involved:
+  \begin{itemize}
+  \item[\footnotesize$\circ$] Requirement gathering and analysis
+  \item[\footnotesize$\circ$] Design and development of Knoppix Linux based JEOS
+  \item[\footnotesize$\circ$] Design and re-mastering of Knoppix Linux
+  \item[\footnotesize$\circ$] Integration of Qemu with the diskless JeOS
+  \item[\footnotesize$\circ$] Integration of the JeOS with existing Unity infrastructure
+  \item[\footnotesize$\circ$] Customization of the JeOS to work with non-standard client devices
+  \item[\footnotesize$\circ$] Design and development of a secure login into the Netboot JeOS
+    integrated to use Unity credentials
+  \end{itemize}
+  Technologies used: Python, GTK, Linux DHCP server, Knoppix Linux, Qemu,
+  Bash scripting
+\item[\footnotesize$\bullet$] \textbf{Netboot V2.0:} Atlantis Netboot v2.0 involved an enhanced JeOS. This JeOS
+used Ubuntu as a base. The user could select a Windows based virtual
+machine image and boot into it seamlessly using VMware Player built into the
+JeOS. The project also involved working with the Etherboot gPXE team to
+integrate gPXE with the Atlantis Netboot solution.
+\\(\url{http://etherboot.org/wiki/appnotes/authmenus})\\
+The project involved:
+  \begin{itemize}
+  \item[\footnotesize$\circ$] Requirement gathering and analysis
+  \item[\footnotesize$\circ$] Design and development of Ubuntu Linux based JeOS
+  \item[\footnotesize$\circ$] Design and development of nfs-kernel based diskless system
+  \item[\footnotesize$\circ$] Design and integration of Etherboot gPXE with Netboot
+  \item[\footnotesize$\circ$] Integration of user Virtual Machine selection with Etherboot gPXE
+  \item[\footnotesize$\circ$] Customization and configuration of DHCP server
+  \item[\footnotesize$\circ$] Integration of VMware Player into a diskless Ubuntu environment
+  \item[\footnotesize$\circ$] Design and development of a secure login system integrated with Unity
+    and Active Directory
+  \item[\footnotesize$\circ$] Design and development of Diskless Client Control module which
+    allows remote monitoring and shutdown
+  \item[\footnotesize$\circ$] Development of MAC address based
+    subscription filters
+  \end{itemize}
+  Technologies used: Ruby, GTK, Python, Ubuntu Linux, Linux TPTP server,
+  Linux DHCP server, VMware Player, Etherboot gPXE, Active Directory, LDAP,
+  NFS, Bash scripting
 \end{itemize}
 }
 
