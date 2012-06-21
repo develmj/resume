@@ -25,6 +25,11 @@
 
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize}
 \newcommand{\Sep}{\vspace{2em}}
+
+\addtolength{\oddsidemargin}{-.35in}
+\addtolength{\evensidemargin}{-.35in}
+\addtolength{\textwidth}{1in}
+
 \begin{document}
 \thispagestyle{empty}
 
@@ -59,7 +64,7 @@
   \item[\footnotesize$\bullet$] Managed customer engagements and new
     business opportunities\MarginDate{CTO and Project Manager}
   \item[\footnotesize$\bullet$] Evangelized Android Mobility to
-    companies in a non-mobility consumer space
+    companies in the non-mobility consumer space
   \item[\footnotesize$\bullet$] Took charge of project management and product
     management
   \item[\footnotesize$\bullet$] Trained team leads and team members in
@@ -108,48 +113,40 @@
 
 \Description{
 \begin{itemize}
-\item[\footnotesize$\bullet$] \textbf{Installer: } \MarginDate{Atlantis Ilio}Atlantis Ilio is a storage virtualization solution which provides a
+\item[\footnotesize$\bullet$] \textbf{Installer: }
+  \MarginDate{Atlantis Ilio}{\scriptsize Atlantis Ilio is a storage virtualization solution which provides a
   10X performance increase in VDI storage. Ilio also uses inline Deduplication
-  to reduce VDI storage usage by 4X and give up to 95% IOPS offload. The
+  to reduce VDI storage usage by 4X and give up to 95\% IOPS offload. The
   Installer is used to deploy and configure the Ilio virtual appliance for
-  customer specific needs.\\
-  Role and responsibility:
-{\scriptsize
-  \begin{itemize}
-  \item[\footnotesize$\circ$] Requirement analysis and Database design
-  \item[\footnotesize$\circ$] Design and development of the command line installer
-  \item[\footnotesize$\circ$] Design and integration of email into the installer
-  \item[\footnotesize$\circ$] Design and development of custom email
-    module for Ruby
-\end{itemize}}
-Technologies used: Ruby, SMTP, Linux dialog, Python, Sqlite, Ubuntu Linux
-\item[\footnotesize$\bullet$] \textbf{Monitoring: } The Ilio monitoring module is a notification system to inform
+  customer specific needs.}\\
+\vspace{0.5em}
+  Role and responsibility: {\scriptsize Conducted the requirement analysis and
+  designed the database schema. Designed and developed the command
+  line installer. Designed and integrated the email feature into the
+  installer. Designed and wrote the custom email module for Ruby.}\\
+\vspace{0.5em}
+Technologies used: {\scriptsize Ruby, SMTP, Linux dialog, Python, Sqlite, Ubuntu Linux}
+\item[\footnotesize$\bullet$] \textbf{Monitoring: }{\scriptsize The Ilio monitoring module is a notification system to inform
 administrators regarding server failure, failover or failback (in a high
-availability environment) using the integrated email system.\\
-Role and responsibility:
-{\scriptsize
-  \begin{itemize}
-  \item[\footnotesize$\circ$] Requirement analysis
-  \item[\footnotesize$\circ$] Design and development of email module
-  \item[\footnotesize$\circ$] Design and integration of modules with monitoring daemons
-  \item[\footnotesize$\circ$] Development of Ruby Erlang module
-  \end{itemize}}
-  Technologies used: Ruby, Erlang, Erlectricity, SMTP, Linux dialog, Ubuntu
-  Linux, Bash scripting
-\item[\footnotesize$\bullet$] \textbf{Configurator: } The Ilio Configurator is an installer/configuration generator.
+availability environment) using the integrated email system.}\\
+\vspace{0.5em}
+Role and responsibility:{\scriptsize Conducted the requirement
+  analysis. Designed and developed the email module. Designed and
+  integrated modules with the monitoring daemons. Developed the Ruby
+  Erlang module.}\\
+\vspace{0.5em}
+  Technologies used: {\scriptsize Ruby, Erlang, Erlectricity, SMTP, Linux dialog, Ubuntu
+  Linux, Bash scripting}
+\item[\footnotesize$\bullet$] \textbf{Configurator: }{\scriptsize The Ilio Configurator is an installer/configuration generator.
     The configurator managed networking, installation details and deployment
-    details needed to install/deploy the product.\\
-    Role and responsibility:
-    {\scriptsize
-  \begin{itemize}
-  \item[\footnotesize$\circ$] Requirement gathering, analysis and Database design
-  \item[\footnotesize$\circ$] Design and development of configurator UI
-  \item[\footnotesize$\circ$] Design and development of input error processing engine
-  \item[\footnotesize$\circ$] Integration of configurator with ISO generation tools
-  \item[\footnotesize$\circ$] Customization of UI toolkit for single
-    point branding changes
-  \end{itemize}}
-  Technologies used: Ruby, Shoes
+    details needed to install/deploy the product.}\\
+    Role and responsibility:{\scriptsize Was in charge of requirement
+      gathering, analysis and database design. Designed and developed
+      the configurator UI and the input error processing
+      engine. Integrated the Ilio configurator with ISO generation
+      tools. Headed the customization of the UI toolkit for single point branding changes.}\\
+    \vspace{0.5em}
+    Technologies used: {\scriptsize Ruby, Shoes}
 \end{itemize}
 }
 
@@ -157,68 +154,60 @@ Role and responsibility:
 
 \Description{
 \begin{itemize}
-\item[\footnotesize$\bullet$] \textbf{Active Directory:}\MarginDate{Atlantis Unity} The Active Directory integration with Atlantis
+\item[\footnotesize$\bullet$] \textbf{Active
+  Directory:}\MarginDate{Atlantis Unity}{\scriptsize The Active Directory integration with Atlantis
   Unity allowed users to access their Unity account using their enterprise Active
   Directory credentials. This also allowed administrators to control user access,
-  permissions and secure login through a single point.\\
-  Role and responsibility:
-  {\scriptsize
-  \begin{itemize}
-  \item[\footnotesize$\circ$] Requirement analysis
-  \item[\footnotesize$\circ$] Design and development of custom Ruby module for Active Directory
-  \item[\footnotesize$\circ$] Database design
-  \item[\footnotesize$\circ$] Development of module to integrate Linux LDAP and Active Directory
-  \item[\footnotesize$\circ$] Development of custom LDAP tree search
-  \item[\footnotesize$\circ$] Design and development of single sign-on system for Unity
-  \item[\footnotesize$\circ$] Development of mapping between Active Directory and Unity
-    subscriptions
-  \end{itemize}}
-  Technologies used: Ruby, Ruby on Rails, LDAP, Active Directory, Awk,
-  Gentoo Linux, Nginx
-\item[\footnotesize$\bullet$] \textbf{Netboot V1.0:} Atlantis Netboot v1.0 is a PXE-boot Knoppix based JeOS. The
-JeOS allowed diskless clients to boot into a custom environment and
-seamlessly start up a Windows based virtual machine image using Qemu
-built into the JeOS.\\
-Role and responsibility:
-{\scriptsize
-  \begin{itemize}
-  \item[\footnotesize$\circ$] Requirement gathering and analysis
-  \item[\footnotesize$\circ$] Design and development of Knoppix Linux based JEOS
-  \item[\footnotesize$\circ$] Design and re-mastering of Knoppix Linux
-  \item[\footnotesize$\circ$] Integration of Qemu with the diskless JeOS
-  \item[\footnotesize$\circ$] Integration of the JeOS with existing Unity infrastructure
-  \item[\footnotesize$\circ$] Customization of the JeOS to work with non-standard client devices
-  \item[\footnotesize$\circ$] Design and development of a secure login into the Netboot JeOS
-    integrated to use Unity credentials
-  \end{itemize}}
-  Technologies used: Python, GTK, Linux DHCP server, Knoppix Linux, Qemu,
-  Bash scripting
-\item[\footnotesize$\bullet$] \textbf{Netboot V2.0:} Atlantis Netboot v2.0 involved an enhanced JeOS. This JeOS
+  permissions and secure login through a single point.}\\
+  \vspace{0.5em}
+  Role and responsibility:{\scriptsize Was in charge of requirement
+    analysis and database schema design. Designed and developed the
+    custom Ruby module for Active Directory integration. Developed the
+    module to integrate Linux LDAP and Active Directory and developed
+    a custom LDAP tree search. Designed and developed a single sign-on
+    system for Unity. Also developed a mapping between Active
+    Directory and Unity subscriptions.}\\
+  \vspace{0.5em}
+  Technologies used: {\scriptsize Ruby, Ruby on Rails, LDAP, Active Directory, Awk,
+    Gentoo Linux, Nginx}
+\item[\footnotesize$\bullet$] \textbf{Netboot V1.0:}{\scriptsize
+  Atlantis Netboot v1.0 is a PXE-boot Knoppix based JeOS. The
+  JeOS allowed diskless clients to boot into a custom environment and
+  seamlessly start up a Windows based virtual machine image using Qemu
+  built into the JeOS.}\\
+  \vspace{0.5em}
+  Role and responsibility: {\scriptsize Performed requirement gathering
+  and analysis. Designed and developed a Knoppix Linux based
+  JEOS. Designed and re-mastered Knoppix Linux to suite the product
+  needs. Integrated Qemu virtualization with the diskless
+  JeOS. Integrated the JeOS with the existing Unity
+  infrastructure. Customized the JeOS to work with non-standard client
+  devices. Designed and developed a secure login into the Netboot JeOS
+  integrated to use Unity credentials.}\\
+\vspace{0.5em}
+Technologies used: {\scriptsize Python, GTK, Linux DHCP server, Knoppix Linux, Qemu,
+  Bash scripting}
+\item[\footnotesize$\bullet$] \textbf{Netboot V2.0:}{\scriptsize Atlantis Netboot v2.0 involved an enhanced JeOS. This JeOS
 used Ubuntu as a base. The user could select a Windows based virtual
 machine image and boot into it seamlessly using VMware Player built into the
 JeOS. The project also involved working with the Etherboot gPXE team to
 integrate gPXE with the Atlantis Netboot solution.
-\\(\url{http://etherboot.org/wiki/appnotes/authmenus})\\
-Role and responsibility:
-{\scriptsize
-  \begin{itemize}
-  \item[\footnotesize$\circ$] Requirement gathering and analysis
-  \item[\footnotesize$\circ$] Design and development of Ubuntu Linux based JeOS
-  \item[\footnotesize$\circ$] Design and development of nfs-kernel based diskless system
-  \item[\footnotesize$\circ$] Design and integration of Etherboot gPXE with Netboot
-  \item[\footnotesize$\circ$] Integration of user Virtual Machine selection with Etherboot gPXE
-  \item[\footnotesize$\circ$] Customization and configuration of DHCP server
-  \item[\footnotesize$\circ$] Integration of VMware Player into a diskless Ubuntu environment
-  \item[\footnotesize$\circ$] Design and development of a secure login system integrated with Unity
-    and Active Directory
-  \item[\footnotesize$\circ$] Design and development of Diskless Client Control module which
-    allows remote monitoring and shutdown
-  \item[\footnotesize$\circ$] Development of MAC address based
-    subscription filters
-  \end{itemize}}
-  Technologies used: Ruby, GTK, Python, Ubuntu Linux, Linux TPTP server,
+\\(\url{http://etherboot.org/wiki/appnotes/authmenus})}\\
+  \vspace{0.5em}
+  Role and responsibility: {\scriptsize Performed requirement gathering
+  and analysis. Designed and developed an Ubuntu Linux based
+  JeOS with an nfs-kernel diskless system. Also integrated Etherboot
+  gPXE with Atlantis Netboot. Integrated user Virtual Machine selection with Etherboot
+  gPXE during boot process. Created a Customized the linux DHCP server
+  to support Netboot. Integrated VMware Player into a diskless Ubuntu
+  environment. Designed and developed a secure login system integrated
+  with Unity and Active Directory. Designed and developed a Diskless
+  Client Control module which allowed remote monitoring and
+  shutdown. Developed a MAC address based subscription filter.}\\
+\vspace{0.5em}
+  Technologies used: {\scriptsize Ruby, GTK, Python, Ubuntu Linux, Linux TPTP server,
   Linux DHCP server, VMware Player, Etherboot gPXE, Active Directory, LDAP,
-  NFS, Bash scripting
+  NFS, Bash scripting}
 \end{itemize}
 }
 
@@ -226,95 +215,83 @@ Role and responsibility:
 
 \Description{
 \begin{itemize}
-\item[\footnotesize$\bullet$] \textbf{User signup system: }Webtop was a web-based service which \MarginDate{Atlantis Webtop}allowed users to
+\item[\footnotesize$\bullet$] \textbf{User signup system: }{\scriptsize Webtop was a web-based service which \MarginDate{Atlantis Webtop}allowed users to
     subscribe to desktop applications hosted on the cloud and access them using
     them remotely using a web-browser. This project allowed users to signup,
     create default user data and subscriptions and send an email on account
-    creation.\\
-    Role and responsibility:
-{\scriptsize
-    \begin{itemize}
-    \item[\footnotesize$\circ$] Requirement gathering
-    \item[\footnotesize$\circ$] Database design
-    \item[\footnotesize$\circ$] Design and development of the
-      web-based system
-    \item[\footnotesize$\circ$] Development of an automated mailer for
-      signed-up users
-    \item[\footnotesize$\circ$] Development of an automatic backup
-      system for the database
-    \end{itemize}}
-    Technologies used: Ruby, RoR, Action Mailer (RoR), Postgres, Slony,
-Gentoo Linux
-  \item[\footnotesize$\bullet$] \textbf{User management system: }The Webtop User management system allowed
+    creation.}\\
+  \vspace{0.5em}
+    Role and responsibility: {\scriptsize Gathered requirements and
+      designed the database schema. Designed and developed the
+      web-based system. Developed an automated mailer system for
+      signed-up users. Developed an automatic backup system for the
+      database.}\\
+\vspace{0.5em}
+    Technologies used: {\scriptsize Ruby, RoR, Action Mailer (RoR), Postgres, Slony,
+Gentoo Linux}
+  \item[\footnotesize$\bullet$] \textbf{User management system:
+  }{\scriptsize The Webtop User management system allowed
 administrators to handle all aspects of the user account. It let administrators
-set user quotas, modify access rights and application subscriptions.\\
-Role and responsibility:
-{\scriptsize
-    \begin{itemize}
-    \item[\footnotesize$\circ$] Requirement gathering and analysis
-    \item[\footnotesize$\circ$] Database design
-    \item[\footnotesize$\circ$] Design of the web-based administration console
-    \item[\footnotesize$\circ$] Design and development of server-side components to perform Linux
-      user administration (creation, permissions etc.)
-    \item[\footnotesize$\circ$] Design and development of the quota and subscription management
-engine
-    \end{itemize}}
-    Technologies used: Ruby, Ruby on Rails, Postgres, Gentoo Linux
-  \item[\footnotesize$\bullet$] \textbf{User chat integration: }The Webtop User chat allowed users to chat among
-    themselves using an integrated chat client (browser-based).\\
-    Role and responsibility:
-    {\scriptsize
-    \begin{itemize}
-    \item[\footnotesize$\circ$] Design and development of the browser based chat system
-    \item[\footnotesize$\circ$] Integration of JWChat with the existing Ruby on Rails based framework
-    \item[\footnotesize$\circ$] Configuration and integration of ejbbaerd with the Rails backend
-    \item[\footnotesize$\circ$] Design and development of user chat
-      access rights engine
-    \end{itemize}}
-    Technologies used: Ruby, Ruby on Rails, ejabberd, JWChat, XML
-  \item[\footnotesize$\bullet$] \textbf{User monitoring: }The user monitoring module was used to determine
+set user quotas, modify access rights and application
+subscriptions.}\\
+    \vspace{0.5em}
+    Role and responsibility: {\scriptsize Performed requirement gathering
+      and analysis. Designed the complete database schema. Designed and
+      developed the web-based administration console. Designed and
+      developed the server-side components to perform Linux user
+      administration (creation, permissions etc.) Designed and developed
+      the quota and subscription management engine.}\\
+    \vspace{0.5em}
+    Technologies used: {\scriptsize Ruby, Ruby on Rails, Postgres, Gentoo Linux}
+  \item[\footnotesize$\bullet$] \textbf{User chat integration:
+  }{\scriptsize The Webtop User chat allowed users to chat among
+    themselves using an integrated chat client (browser-based).}\\
+\vspace{0.5em}
+    Role and responsibility: {\scriptsize Designed and developed the
+      browser based chat system. Integrated JWChat with the existing
+      Ruby on Rails based framework. Configured and integrated
+      ejbbaerd with the Rails backend. Designed and developed the user
+      chat access rights engine.}\\
+    \vspace{0.5em}
+    Technologies used: {\scriptsize Ruby, Ruby on Rails, ejabberd, JWChat, XML}
+  \item[\footnotesize$\bullet$] \textbf{User monitoring: }{\scriptsize The user monitoring module was used to determine
     Webtop usage statistics. The project involved monitoring subscription usage,
-    geographical access, report and trend generation.\\
-    Role and responsibility:
-    {\scriptsize
-    \begin{itemize}
-    \item[\footnotesize$\circ$] Requirement analysis
-    \item[\footnotesize$\circ$] Database design
-    \item[\footnotesize$\circ$] Design and development of user logging subsystem
-    \item[\footnotesize$\circ$] Development of user access to geolocation mapping engine
-    \item[\footnotesize$\circ$] Design and development of trend determination engine
-    \item[\footnotesize$\circ$] Development of tools for report
-      generation
-    \end{itemize}}
-    Technologies used: Ruby, Ruby on Rails, Awk, Postgres, Gentoo Linux
-  \item[\footnotesize$\bullet$] \textbf{Google gadget: }The Webtop Google gadget was a full-featured Webtop
+    geographical access, report and trend generation.}\\
+
+\vspace{0.5em}
+    Role and responsibility: {\scriptsize Performed requirement
+      analysis and database schema design. Designed and developed the
+      user logging subsystem. Developed the user access to geolocation
+      mapping engine. Designed and developed the trend determination
+      engine. Developed the tools for report generation.}\\
+
+\vspace{0.5em}
+    Technologies used: {\scriptsize Ruby, Ruby on Rails, Awk, Postgres, Gentoo Linux}
+  \item[\footnotesize$\bullet$] \textbf{Google gadget: }{\scriptsize The Webtop Google gadget was a full-featured Webtop
     access console re-written and miniaturized to work within a google gadget.
     This allowed users to integrate their Webtop account into their Google home
-    page.\\
-    Role and responsibility:
-    {\scriptsize
-    \begin{itemize}
-    \item[\footnotesize$\circ$] Requirement gathering and analysis
-    \item[\footnotesize$\circ$] Design and development of miniaturized Webtop UI
-    Design and development of Google Gadget
-    \item[\footnotesize$\circ$] Development of Rails backend to support Google Gadget
-    \item[\footnotesize$\circ$] Integration of Application Streaming with Google Gadget
-    \item[\footnotesize$\circ$] Development of secure login through
-      Google Gadget
-    \end{itemize}}
-    Technologies used: Ruby, Ruby on Rails, XML, NX, Gentoo Linux,
-    Nginx
+    page.}\\
+    Role and responsibility: {\scriptsize Gathered and analyzed
+      requirements. Designed and developed a miniaturized Webtop
+      UI. Designed and developed the Webtop Google Gadget. Developmed
+      the Rails backend to support the Google Gadget. Integrated
+      Webtop Application Streaming with Google Gadget. Developed a
+      secure login system through Google Gadget.}\\
+    \vspace{0.5em}
+    Technologies used: {\scriptsize Ruby, Ruby on Rails, XML, NX, Gentoo Linux,
+    Nginx}
 \end{itemize}
 }
 
 \vspace{1em}
-\newpage
+
 \noindent\spacedlowsmallcaps{\ul{Technical Skills}}
 \vspace{0.5em}
 
 \Description{
 \begin{itemize}
-  \item[\footnotesize$\bullet$]Ruby, Python\MarginDate{Programming Languages}
+  \item[\footnotesize$\bullet$]Ruby, Python\MarginDate{Programming
+    Languages}, C, C++, 
   \item[\footnotesize$\bullet$]Learning Clojure and Erlang
 \end{itemize}
 }
@@ -327,8 +304,9 @@ engine
     Windows (use)\MarginDate{Development}
   \item[\footnotesize$\bullet$] \textsl{Frameworks:} Rails (Ruby on Rails)
   \item[\footnotesize$\bullet$] \textsl{Virtualization:} VMWare
-    Player, VMWare Workstation, VMWare ESX, VMWare View, High
-    Availability, Qemu
+    Player, VMWare Workstation, VMWare ESX, VMWare ESXi, VMWare View, Qemu
+  \item[\footnotesize$\bullet$] \textsl{Server technologies:} Familiar with High Availability
+    systems and storage systems such as NFS, CIFS, NAS, SAN and iSCSI 
   \item[\footnotesize$\bullet$] Working knowledge of Unix System Programming
   \item[\footnotesize$\bullet$] Good knowledge of Shoes (Ruby based GUI toolkit) and working
     knowledge of Gtk (Rubygtk)
